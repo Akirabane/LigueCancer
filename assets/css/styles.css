@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "GothamRounded-Book";
+    src: url("../fonts/GothamRounded-Book.otf") format("truetype");
+}
+
+:root {
+    --GothamRounded: "GothamRounded-Book";
+
+    --GothamRounded-Light: lighter;
+    --GothamRounded-Bold: 900;
+    --GothamRounded-Medium: 700;
+
+    --color-bleu: #185AAA;
+    --color-orange: #F47921;
+    --color-blanc-casse: #F4F4F4;
+    --color-orange-hover: #E17020;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--GothamRounded) !important;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+/* POPUP */
+.popup {
+    background-color: #F47921 !important;
+    color: white !important;
+    text-align: center;
+    z-index: 10000;
+    width: 100vw;
+    font-weight: var(--GothamRounded-Medium);
+}
+/* FIN POPUP */
+
+.width {
+    width: 100vw;
+}
+
+/* HEADER */
+
+header {
+    background-color: #185AAA !important;
+    color: white !important;
+    /*font-size: 1.25em;*/
+    z-index: 100;
+    position: fixed;
+    box-shadow: 0px 15px 20px 0px rgba(64,64,64,0.20);
+    -webkit-box-shadow: 0px 15px 20px 0px rgba(64,64,64,0.20);
+    -moz-box-shadow: 0px 15px 20px 0px rgba(64,64,64,0.20);
+    width: 100vw;
+}
+
+.img-header {
+    width: 3em;
+}
+
+.lien-header {
+    color: white!important;
+    font-weight: normal;
+    transition: all 0.25s ease-in-out;
+}
+
+.lien-header:hover {
+    color: var(--color-orange)!important;
+    font-weight: bold;
+}
+
+.alert {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+/* FIN HEADER */
+
+/* CAROUSEL / SLIDER */
+@media screen and (max-width: 576px) {
+    .carousel-margin-mobile {
+        margin-top: 70px;
+    }
+}
+
+.mt-9 {
+    margin-top: 9.5rem;
+}
+
+.size {
+    width: 15%;
+}
+
+/*TAILLE WIDTH*/
+
+.vw-50 {
+    width: 25vh;
+}
+.w-45 {
+    width: 45%;
+}
+
+/*FIN WIDTH*/
+
+/* COULEURS */
+
+.white {
+    color: white !important;
+}
+.orange {
+    color: var(--color-orange);
+}
+
+.bleu {
+    color: var(--color-bleu);
+}
+
+.text-left-aligned {
+    text-align: justify;
+}
+
+.bg-bleu {
+    background-color: var(--color-bleu);
+}
+
+/* FIN COULEURS */
+
+/* MARGIN 10 */
+.mx-10 {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem!important;
+}
+
+/* FONTS */
+.pa-content-title {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.pa-content-cont {
+    font-size: 1.1em;
+}
+
+.sds-content-title {
+    font-weight: bold;
+    font-size: 2.20em;
+}
+
+.sds-content-cont {
+    font-size: 1.05em;
+}
+
+#mid-content-h2 {
+    font-weight: bold;
+    font-size: 2.50em;
+}
+
+.mid-content-cont-title {
+    font-size: 1.3em;
+}
+
+.mid-content-cont {
+    font-size: 1.15em;
+}
+/* FIN FONTS */
+
+/* BOUTONS DONS */
+.button_download {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.button_dons {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.button_download:hover {
+    background-color: var(--color-blanc-casse);
+    color: var(--color-orange);
+}
+
+.button_dons:hover {
+    background-color: var(--color-blanc-casse);
+    color: var(--color-orange);
+    border: var(--color-orange) 2px solid;
+}
+/* FIN BOUTONS DONS */
+
+.pbq {
+    background-color: var(--color-orange);
+    color: white !important;
+    padding: 1%;
+}
+
+.dons {
+    text-align: right;
+}
+
+/* PICTOGRAMMES DONS */
+
+.picto-soutien:hover {
+    background-color: var(--color-orange-hover);
+    color: white;
+}
+
+.img-thumbnail {
+    background-color: transparent;
+    border: none !important;
+}
+
+.picto-soutien {
+    background-color: var(--color-bleu);
+    color: white;
+    padding: 2%;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.picto-soutien a {
+    text-decoration: none;
+    color: var(--color-blanc-casse);
+    height: auto;
+}
+/* FIN PICTOGRAMMES */
+
+/* GOOGLE MAPS */
+
+.google-maps {
+    position: relative;
+    padding-bottom: 20em;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* FIN GOOGLE MAPS */
+
+/* FOOTER */
+footer a {
+    text-decoration: none;
+    color: var(--color-orange);
+    transition: all 0.25s ease-in-out;
+}
+
+footer {
+    background: url(../img/footer.png) ;
+    background-size: cover;
+    background-position: center;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.mentions a {
+    color: white;
+    text-decoration: underline;
+}
+
+.mentions a:hover {
+    color: var(--color-orange);
+}
+
+#footer-ligue-img {
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 120px;
+}
+
+.footer-text-augment {
+    padding: 20px;
+    font-size: 3em;
+}
+
+.footer-text-reduce {
+    font-size: 0.75em;
+}
+
+.footer-mid-picto {
+    height: 3em;
+    width: auto;
+}
+
+#footer-fixed-bottom {
+    font-size: small;
+}
+
+.icons {
+    font-size: 3em;
+}
+
+.icons-hold {
+    font-size: 2em;
+}
+/* FIN FOOTER */
